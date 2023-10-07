@@ -1,2 +1,2 @@
 # pruebas_tecnicas_solucion
- Pruebas tecnicas con su respectiva solución (Utilizando varios lenguajes)
+ Pruebas técnicas con su respectivas soluciones (Utilizando varios lenguajes)
