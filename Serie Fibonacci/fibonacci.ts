@@ -1,5 +1,5 @@
 //Nota, para facilitar la ejecución de los ejercicios, instalar extención Quokka 
-//Solucion con TypeScript
+//Solución con TypeScript
 
 const fibonacci = (number: number) => {
     const result: number[] = [0, 1];
@@ -13,4 +13,4 @@ const fibonacci = (number: number) => {
     return result
 };
 
-fibonacci(1)
+fibonacci(10)
