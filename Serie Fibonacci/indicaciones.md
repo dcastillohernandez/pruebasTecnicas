@@ -1,0 +1,3 @@
+Dado un número muestra una serie de fibonacci.
+Fibonacci es un orden de número que se suman los resultados partiendo de 0 y 1 para dar el resultado del próximo número
+Ej: 0,1,1,2,3,5,8...
