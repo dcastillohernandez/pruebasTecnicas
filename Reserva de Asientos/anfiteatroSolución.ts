@@ -15,5 +15,7 @@ for (let f = 0; f < 10; f++) {
 
 console.log("Sistema de reserva de asientos");
 
+//TODO: me quedé aqui, siguiente punto el número 2
+
 
 
