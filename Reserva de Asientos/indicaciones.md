@@ -14,3 +14,5 @@ Consideraciones a tener en cuenta:
     Solo se evalua el 100% del pensamiento lógico del desarrollo de la aplicación.
 
     En caso que un cliente solicite visualizar cuáles son los asientos libres, el sistema debe permitir mostrar de forma gráfica el mapa de asientos. Utilizar únicamente lógica y salida por consola.
+
+    Consideración importante {No se pueden usar funciones específicas ó metodos propios de los lenguajes.}
