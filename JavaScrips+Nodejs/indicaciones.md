@@ -93,3 +93,18 @@ console.log('Hola mundo')
 
 - La utilidad debe devolver un método `config` que lee el archivo `.env` y añade las variables de entorno que haya en el archivo del objeto `process.env`
 - Por ejemplo si tu archivo `.env` contiene:
+
+```sh
+PORT=8000
+TOKEN="123ABC"
+```
+
+Entonces podríamos hacer esto:
+
+```JavaScript
+const dotenv = require("./dotenv.js");
+dotenv.config();
+
+console.log(process.env.PORT); //"8000"
+console.log(process.env.TOKEN); //"123ABC"
+```
