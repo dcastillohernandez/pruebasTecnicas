@@ -108,3 +108,33 @@ dotenv.config();
 console.log(process.env.PORT); //"8000"
 console.log(process.env.TOKEN); //"123ABC"
 ```
+
+También se le puede pasar el path del archivo `.env` como parámetro:
+
+```JavaScript
+const dotenv = require("./dotenv.js")
+dotenv.config("./config/.env.local")
+```
+
+Cosas a tener en cuenta:
+
+- Solo se permite leer el método `fs` para leer el archivo.
+- Si el archivo no existe no debe dar error.
+- Si el archivo existe pero no tiene ninguna variable de entorno, no debe hacer nada.
+- Sólo debe soportar el archivo `.env` o el que se le pasa como parámetro, no hace falta que soporte `.env.local`, `.env.development` y similares de forma automática.
+- Las variables de entorno siempre son strings, por lo que si en el archivo `.env` hay número, por ejemplo `PORT=8000`, al leerlo con `fs`, y añadirlo a `process.env` debe ser un string no un número.
+- `process.env` es un objeto y, por lo tanto, es mutable. Esto significa que podemos añadir propiedades nuevas sin problemas.
+
+-7 Diseña una API REST utilizando Express que permita a los usuarios crear, leer, modificar, actualizar y eliminar elementos de una lista.
+
+La lista tendrá obtejos que tienen la siguiente forma:
+
+```JavaScript
+{
+    id: 1,
+    content: 'Item 1',
+}
+```
+
+Haz la solución en el archivo `solutions/server.js` y exporta el `app` y `server` creado.
+Instala Express con `npm install express`. No te preocupes por CORS.
